@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textView1" type="id">textView1</item>
+    <item name="tableLayout21" type="id">tableLayout21</item>
+    <item name="textView2" type="id">textView2</item>
+    <item name="editText1" type="id">editText1</item>
+    <item name="buttonFreq" type="id">buttonFreq</item>
+    <item name="button1" type="id">button1</item>
+    <item name="buttonTemp1" type="id">buttonTemp1</item>
+    <item name="button3" type="id"/>
+</resources>
