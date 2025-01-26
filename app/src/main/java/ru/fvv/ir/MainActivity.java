@@ -29,6 +29,26 @@ public class MainActivity extends AppCompatActivity {
 
         public void OnClick1 (View view) {
             System.out.println("Test нажатия кнопки");
+                    if (Build.VERSION.SDK_INT >= 23) {
+            // ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService("consumer_ir");
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) this.getSystemService(Context.CONSUMER_IR_SERVICE);
+
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(this.freqB, new int[]{
+                        //4580, 4470, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 580, 520, 580, 520, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 630, 520, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 580, 570, 530, 1720, 580, 520, 580, 1670, 580, 1670, 580, 1720, 530, 1720, 580, 1670, 580, 1670, 580
+
+                        // Volume +
+                        8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 630,520, 580,520, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,520, 630,520, 580,520, 630,1620, 630,1620, 580,570, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,570, 580,1620, 630,520, 580,1670, 580
+
+                });
+//                PrintStream printStream = System.out;
+//                printStream.println("freqB = " + this.freqB);
+//                PrintStream printStream2 = System.out;
+//                printStream2.println("freqB = " + this.freqB);
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", 0).show();
+        }
     }
 
 
