@@ -2,17 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           xmlns:tools="http://schemas.android.com/tools">
 
-
-<!--    <uses-permission android:name="android.permission.TRANSMIT_IR" android:required="false" />-->
-<!--    <uses-permission android:name="com.sony.remotecontrol.permission.API"/>-->
-<!--    <uses-feature android:name="android.hardware.consumerir" android:required="false"/>-->
-
-
     <uses-sdk android:minSdkVersion="23"
               android:targetSdkVersion="31" />
     <uses-feature android:name="android.hardware.ConsumerIrManager" />
     <uses-permission android:name="android.permission.TRANSMIT_IR" />
-
 
     <application
             android:allowBackup="true"
