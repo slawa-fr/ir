@@ -30,45 +30,77 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-        public void OnClick1 (View view) {
-            System.out.println("Test нажатия кнопки");
-
-
-            ConsumerIrManager consumerIrManager = (ConsumerIrManager) this.getSystemService(Context.CONSUMER_IR_SERVICE);
-            int frequency = 38400;
-            int[] pattern = new int[]{
-//                      1, 105, 5, 1, 75, 1095, 20, 60, 20, 140, 15, 2500, 80, 1
-// Volume +
-                        8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 630,520, 580,520, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,520, 630,520, 580,520, 630,1620, 630,1620, 580,570, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,570, 580,1620, 630,520, 580,1670, 580
-
-
-            };
-            consumerIrManager.transmit(frequency, pattern);
-
-
-
-//                    if (Build.VERSION.SDK_INT >= 23) {
-//            // ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService("consumer_ir");
+//        public void OnClick1 (View view) {
+//            System.out.println("Test нажатия кнопки");
+//
+//
 //            ConsumerIrManager consumerIrManager = (ConsumerIrManager) this.getSystemService(Context.CONSUMER_IR_SERVICE);
-//
-//            if (consumerIrManager.hasIrEmitter()) {
-//                consumerIrManager.transmit(this.freqB, new int[]{
-//                        //4580, 4470, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 580, 520, 580, 520, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 630, 520, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 580, 570, 530, 1720, 580, 520, 580, 1670, 580, 1670, 580, 1720, 530, 1720, 580, 1670, 580, 1670, 580
-//
-//                        // Volume +
+//            int frequency = 38400;
+//            int[] pattern = new int[]{
+////                      1, 105, 5, 1, 75, 1095, 20, 60, 20, 140, 15, 2500, 80, 1
+//// Volume +
 //                        8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 630,520, 580,520, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,520, 630,520, 580,520, 630,1620, 630,1620, 580,570, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,570, 580,1620, 630,520, 580,1670, 580
 //
-//                });
-////                PrintStream printStream = System.out;
-////                printStream.println("freqB = " + this.freqB);
-////                PrintStream printStream2 = System.out;
-////                printStream2.println("freqB = " + this.freqB);
-//                return;
-//            }
-//            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", 0).show();
-//        }
-    }
+//
+//            };
+//            consumerIrManager.transmit(frequency, pattern);
+//
+//
+//
+////                    if (Build.VERSION.SDK_INT >= 23) {
+////            // ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService("consumer_ir");
+////            ConsumerIrManager consumerIrManager = (ConsumerIrManager) this.getSystemService(Context.CONSUMER_IR_SERVICE);
+////
+////            if (consumerIrManager.hasIrEmitter()) {
+////                consumerIrManager.transmit(this.freqB, new int[]{
+////                        //4580, 4470, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 580, 520, 580, 520, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 630, 520, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 580, 570, 530, 1720, 580, 520, 580, 1670, 580, 1670, 580, 1720, 530, 1720, 580, 1670, 580, 1670, 580
+////
+////                        // Volume +
+////                        8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 630,520, 580,520, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,520, 630,520, 580,520, 630,1620, 630,1620, 580,570, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,570, 580,1620, 630,520, 580,1670, 580
+////
+////                });
+//////                PrintStream printStream = System.out;
+//////                printStream.println("freqB = " + this.freqB);
+//////                PrintStream printStream2 = System.out;
+//////                printStream2.println("freqB = " + this.freqB);
+////                return;
+////            }
+////            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", 0).show();
+////        }
+//    }
 
+    public void onClick1(View view) {
+        System.out.println("Test нажатия кнопки");
+
+                if (Build.VERSION.SDK_INT >= 23) {
+            //ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService("consumer_ir");
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(this.freqB, new int[]{4580, 4470, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 580, 520, 580, 520, 580, 1670, 580, 1720, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 630, 520, 530, 1720, 530, 570, 580, 520, 580, 570, 530, 570, 580, 520, 580, 570, 530, 1720, 580, 520, 580, 1670, 580, 1670, 580, 1720, 530, 1720, 580, 1670, 580, 1670, 580});
+//                PrintStream printStream = System.out;
+//                printStream.println("freqB = " + this.freqB);
+//                PrintStream printStream2 = System.out;
+//                printStream2.println("freqB = " + this.freqB);
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", 0).show();
+        }
+
+
+
+
+//        ConsumerIrManager consumerIrManager = (ConsumerIrManager) this.getSystemService(Context.CONSUMER_IR_SERVICE);
+//        int frequency = 38400;
+//        int[] pattern = new int[]{
+////                      1, 105, 5, 1, 75, 1095, 20, 60, 20, 140, 15, 2500, 80, 1
+//// Volume +
+//                8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 630,520, 580,520, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,520, 630,520, 580,520, 630,1620, 630,1620, 580,570, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,570, 580,1620, 630,520, 580,1670, 580
+//
+//
+//        };
+//        consumerIrManager.transmit(frequency, pattern);
+
+    }
 
 
 //    void loadPref() {
