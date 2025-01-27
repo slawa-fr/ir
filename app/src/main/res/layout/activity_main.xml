@@ -58,7 +58,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/teal_700"
                     android:onClick="onClick2"
-                    android:text="MIC"
+                    android:text="SETTING"
                     app:backgroundTint="@null"
                     android:textColor="@color/white"
                     android:textSize="12sp"
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:background="@color/teal_700"
                     android:onClick="onClick3"
-                    android:text="MOUSE"
+                    android:text="HOME"
                     app:backgroundTint="@null"
                     android:textColor="@color/white"
                     android:textSize="12sp"
@@ -122,6 +122,153 @@
                     android:background="@color/teal_700"
                     android:onClick="onClick6"
                     android:text="VOL +"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center">
+
+            <Button
+                    android:id="@+id/button7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick7"
+                    android:text="PROG -"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+            <Button
+                    android:id="@+id/button8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick8"
+                    android:text="UP"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+            <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick9"
+                    android:text="PROG +"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center">
+
+            <Button
+                    android:id="@+id/button10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick10"
+                    android:text="LEFT"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+            <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick11"
+                    android:text="OK"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+            <Button
+                    android:id="@+id/button12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick12"
+                    android:text="RIGHT"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:gravity="center">
+
+            <Button
+                    android:id="@+id/button13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick13"
+                    android:text="BACK"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+            <Button
+                    android:id="@+id/button14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick14"
+                    android:text="DOWN"
+                    app:backgroundTint="@null"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"/>
+            <Button
+                    android:id="@+id/button15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:onClick="onClick15"
+                    android:text="APP"
                     app:backgroundTint="@null"
                     android:textColor="@color/white"
                     android:textSize="12sp"

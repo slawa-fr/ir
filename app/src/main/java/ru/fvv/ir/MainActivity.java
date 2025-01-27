@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
             ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
             if (consumerIrManager.hasIrEmitter()) {
                 consumerIrManager.transmit(38000, new int[]{
-// MIC
-8930,4420, 630,1620, 630,470, 630,570, 580,1620, 630,520, 580,520, 630,470, 630,520, 630,1620, 630,1570, 630,1620, 630,520, 630,1620, 580,1620, 630,1620, 630,1620, 630,520, 580,1620, 630,520, 530,570, 630,570, 580,1620, 630,470, 630,570, 580,1620, 580,520, 580,1670, 630,1620, 630,1570, 630,520, 630,1620, 630,1570, 630
+// SETTING (шестерёнка)
+8880,4470, 630,1620, 630,520, 580,520, 630,1620, 630,470, 630,570, 580,470, 630,520, 630,1620, 630,1620, 630,1570, 630,520, 630,1620, 630,1620, 580,1620, 630,1620, 630,520, 530,570, 630,520, 580,520, 630,520, 530,570, 630,570, 580,1520, 730,1620, 530,1670, 630,1620, 630,1620, 630,1620, 580,1620, 630,1620, 630,520, 530
 
                 });
                 return;
@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
             ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
             if (consumerIrManager.hasIrEmitter()) {
                 consumerIrManager.transmit(38000, new int[]{
-// MOUSE
-8880,4470, 580,1670, 580,520, 580,570, 580,1620, 580,570, 580,570, 580,520, 580,570, 580,1620, 630,1620, 580,1670, 580,570, 580,1620, 580,1670, 580,1670, 580,1670, 580,520, 580,1670, 580,570, 580,1620, 580,570, 580,570, 580,1620, 580,620, 530,1670, 580,520, 580,1670, 580,570, 580,1620, 580,1670, 580,570, 580,1620, 580
+// НОМЕ ((Домой)
+8930,4470, 530,1670, 580,620, 480,620, 530,1670, 580,570, 530,620, 530,620, 480,620, 530,1670, 580,1670, 580,1670, 530,570, 580,1670, 580,1670, 530,1720, 530,1670, 580,620, 530,570, 530,1670, 580,1670, 580,570, 530,570, 580,570, 530,620, 530,1670, 580,1670, 580,570, 530,620, 530,1670, 530,1720, 530,1670, 580,1670, 580
 
                 });
                 return;
@@ -126,6 +126,164 @@ public void onClick4(View view) {
                 consumerIrManager.transmit(38000, new int[]{
 // VOL +
 8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 630,520, 580,520, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,520, 630,520, 580,520, 630,1620, 630,1620, 580,570, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 630,520, 580,570, 580,1620, 630,520, 580,1670, 580
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    ///////////////////////////////////////////////////
+    public void onClick7(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// PROG -
+8930,4420, 580,1670, 580,570, 580,520, 580,1670, 580,570, 580,520, 580,570, 580,520, 580,1670, 580,1670, 580,1670, 580,520, 580,1670, 580,1670, 580,1670, 580,1620, 580,570, 580,1670, 580,520, 580,570, 580,1670, 580,520, 580,1670, 580,570, 580,1620, 580,570, 580,1670, 580,1620, 580,570, 580,1670, 580,520, 580,1670, 580
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick8(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// UP
+8930,4420, 530,1720, 530,570, 530,620, 530,1670, 530,620, 530,620, 480,620, 530,620, 530,1720, 530,1670, 580,1670, 530,620, 530,1670, 580,1670, 580,1670, 580,1670, 580,520, 580,570, 580,520, 580,570, 580,520, 580,570, 580,570, 580,520, 580,1670, 580,1670, 580,1670, 580,1620, 580,1670, 580,1670, 580,1670, 580,1620, 580
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick9(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// PROG +
+8930,4420, 630,1620, 580,570, 580,520, 580,1670, 580,520, 630,520, 580,520, 630,520, 580,1670, 580,1670, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 630,1620, 580,1670, 580,520, 630,520, 580,570, 580,1620, 630,520, 580,1670, 580,520, 630,520, 580,1670, 580,1620, 630,1620, 580,570, 580,1620, 630,520, 580,1670, 580
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    ///////////////////////////////////////////////////
+    public void onClick10(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// LEFT
+8880,4520, 580,1620, 580,570, 580,570, 530,1670, 580,570, 580,520, 580,570, 530,620, 480,1720, 580,1670, 580,1670, 580,520, 580,1670, 580,1670, 580,1670, 580,1620, 580,1670, 580,1670, 580,570, 530,570, 530,620, 530,570, 530,620, 530,620, 530,570, 530,620, 530,1670, 580,1670, 580,1670, 580,1670, 580,1670, 480,1720, 530
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick11(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// OK
+8930,4420, 580,1670, 580,570, 530,570, 580,1670, 580,570, 530,620, 530,570, 530,620, 530,1720, 530,1670, 530,1720, 530,620, 530,1670, 580,1670, 530,1720, 530,1670, 580,1670, 580,1670, 530,1720, 530,1670, 580,1670, 580,570, 530,620, 530,570, 530,620, 530,620, 530,570, 530,620, 530,570, 530,1720, 530,1670, 580,1670, 530
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick12(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// RIGHT
+8980,4420, 580,1620, 630,520, 580,570, 580,1620, 630,520, 580,520, 630,520, 580,570, 580,1620, 630,1620, 580,1670, 580,520, 630,1620, 630,1620, 580,1670, 580,1670, 580,520, 580,1670, 580,520, 630,520, 580,570, 580,520, 580,570, 580,520, 630,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,1670, 580,1620, 630
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+
+    ///////////////////////////////////////////////////
+    public void onClick13(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// BACK
+8930,4470, 630,1570, 580,570, 630,520, 580,1620, 630,520, 630,470, 630,570, 580,520, 530,1720, 580,1620, 630,1620, 630,470, 630,1620, 630,1620, 530,1720, 530,1670, 580,570, 630,520, 630,1570, 630,1620, 630,1620, 530,620, 580,520, 630,520, 630,1620, 630,1570, 630,520, 630,520, 580,520, 630,1620, 630,1620, 630,1620, 530
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick14(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// DOWN
+8880,4470, 530,1720, 530,570, 580,570, 530,1670, 580,570, 530,570, 580,570, 580,570, 530,1670, 580,1670, 580,1670, 580,570, 530,1670, 580,1670, 580,1670, 530,1720, 530,1670, 580,620, 530,570, 530,570, 580,570, 530,570, 630,520, 530,620, 530,570, 580,1670, 580,1670, 530,1720, 530,1670, 580,1670, 580,1720, 480,1720, 530
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick15(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// APP
+8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 580,570, 580,520, 630,520, 580,1670, 580,1670, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,1670, 580,1620, 630,520, 580,1670, 580,1670, 580,520, 580,570, 580,520, 630,520, 580,570, 580,1620, 630,520, 580,520, 630,1620, 580,1670, 580,1670, 580
 
                 });
                 return;
@@ -202,7 +360,7 @@ public void onClick4(View view) {
 //        Настройки
 //        8880,4470, 630,1620, 630,520, 580,520, 630,1620, 630,470, 630,570, 580,470, 630,520, 630,1620, 630,1620, 630,1570, 630,520, 630,1620, 630,1620, 580,1620, 630,1620, 630,520, 530,570, 630,520, 580,520, 630,520, 530,570, 630,570, 580,1520, 730,1620, 530,1670, 630,1620, 630,1620, 630,1620, 580,1620, 630,1620, 630,520, 530
 //
-//        Телевизор
+//        Телевизор - установленные приложения
 //        8930,4420, 580,1670, 580,520, 630,520, 580,1670, 580,520, 580,570, 580,520, 630,520, 580,1670, 580,1670, 580,1620, 630,520, 580,1670, 580,1620, 630,1620, 580,1670, 580,1670, 580,1620, 630,520, 580,1670, 580,1670, 580,520, 580,570, 580,520, 630,520, 580,570, 580,1620, 630,520, 580,520, 630,1620, 580,1670, 580,1670, 580
 //
 //        Выключение звука (MUTE)
