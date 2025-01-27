@@ -13,6 +13,8 @@ import android.widget.Toast;
 // Приходится всё делать с нуля. 2 дня пытался создать пустой проект в Android Studio - результата ноль
 // Получилось только в IDEA и то старой версии: Itellige IDEA 2023.1.2. Эмулятор Pixel API33
 // Это проект для пульта ТВ приставки Media Room
+// Весь функционал готов - 27.01.2025
+
 
 public class MainActivity extends AppCompatActivity {
 
