@@ -293,6 +293,110 @@ public void onClick4(View view) {
     }
 
 
+    ///////////////////////////////////////////////////
+    public void onClick16(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// VK VIDEO
+8930,4470, 530,1620, 630,570, 530,620, 530,1670, 580,570, 530,570, 580,570, 530,620, 530,1670, 580,1670, 580,1670, 530,570, 580,1670, 580,1670, 530,1720, 530,1670, 580,570, 580,1670, 530,570, 580,570, 530,1720, 530,1670, 580,1670, 580,570, 580,1670, 530,570, 580,1670, 580,1670, 530,620, 530,570, 580,570, 580,1620, 580
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick17(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// ZONA
+9030,4370, 580,1620, 630,520, 580,570, 580,1620, 630,520, 580,520, 630,520, 580,570, 580,1620, 630,1620, 630,1620, 580,570, 580,1620, 630,1620, 580,1670, 580,1670, 580,1620, 630,1620, 580,570, 580,520, 630,1620, 630,1620, 580,1670, 580,520, 630,520, 580,520, 630,1620, 630,1620, 580,570, 580,520, 580,570, 580,1620, 630
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick18(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// AIR - Эфир
+8880,4470, 580,1670, 580,520, 580,570, 580,1620, 580,570, 580,570, 580,520, 580,570, 580,1670, 580,1620, 580,1670, 580,570, 580,1670, 580,1620, 580,1670, 580,1670, 580,1670, 580,520, 580,570, 580,520, 580,1670, 580,1670, 580,1670, 580,520, 580,570, 580,1670, 530,1670, 580,1670, 530,620, 580,520, 580,570, 580,1670, 530
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    ///////////////////////////////////////////////////
+    public void onClick19(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// MIC
+8930,4420, 630,1620, 630,470, 630,570, 580,1620, 630,520, 580,520, 630,470, 630,520, 630,1620, 630,1570, 630,1620, 630,520, 630,1620, 580,1620, 630,1620, 630,1620, 630,520, 580,1620, 630,520, 530,570, 630,570, 580,1620, 630,470, 630,570, 580,1620, 580,520, 580,1670, 630,1620, 630,1570, 630,520, 630,1620, 630,1570, 630
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick20(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// MOUSE
+8880,4470, 580,1670, 580,520, 580,570, 580,1620, 580,570, 580,570, 580,520, 580,570, 580,1620, 630,1620, 580,1670, 580,570, 580,1620, 580,1670, 580,1670, 580,1670, 580,520, 580,1670, 580,570, 580,1620, 580,570, 580,570, 580,1620, 580,620, 530,1670, 580,520, 580,1670, 580,570, 580,1620, 580,1670, 580,570, 580,1620, 580
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void onClick21(View view) {
+        System.out.println("Test нажатия кнопки");
+
+        if (Build.VERSION.SDK_INT >= 23) {
+            ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
+            if (consumerIrManager.hasIrEmitter()) {
+                consumerIrManager.transmit(38000, new int[]{
+// MENU
+8980,4420, 530,1670, 580,620, 580,520, 580,1620, 580,570, 530,620, 580,520, 530,620, 580,1620, 630,1620, 580,1670, 530,620, 530,1670, 580,1670, 630,1620, 530,1670, 580,570, 630,1620, 630,470, 580,1670, 580,1670, 580,570, 630,470, 630,520, 530,1720, 630,470, 580,1670, 630,520, 530,570, 580,1670, 630,1620, 530,1720, 530
+
+                });
+                return;
+            }
+            Toast.makeText((Context) this, (CharSequence) "Смартфон не поддерживает ИК порт", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
 
 }
