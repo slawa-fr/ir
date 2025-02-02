@@ -1,6 +1,8 @@
 package ru.fvv.ir;
 
+import android.view.HapticFeedbackConstants;
 import android.view.WindowManager;
+import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Context;
@@ -87,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
 ///////////////////////////////////////////////////
 public void onClick4(View view) {
     System.out.println("Test нажатия кнопки");
+    Button button4 = findViewById(R.id.button4);
+    button4.performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
 
     if (Build.VERSION.SDK_INT >= 23) {
         ConsumerIrManager consumerIrManager = (ConsumerIrManager) getApplicationContext().getSystemService(Context.CONSUMER_IR_SERVICE);
